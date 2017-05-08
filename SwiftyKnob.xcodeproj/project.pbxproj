@@ -13,6 +13,7 @@
 		09261F761EC0B1F5008B40F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09261F751EC0B1F5008B40F0 /* Assets.xcassets */; };
 		09261F791EC0B1F5008B40F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09261F771EC0B1F5008B40F0 /* LaunchScreen.storyboard */; };
 		09261F841EC0B1F5008B40F0 /* SwiftyKnobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09261F831EC0B1F5008B40F0 /* SwiftyKnobTests.swift */; };
+		09775A4F1EC0E13A00D6C69C /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09775A4E1EC0E13A00D6C69C /* Knob.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		09261F7F1EC0B1F5008B40F0 /* SwiftyKnobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyKnobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09261F831EC0B1F5008B40F0 /* SwiftyKnobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyKnobTests.swift; sourceTree = "<group>"; };
 		09261F851EC0B1F5008B40F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09775A4E1EC0E13A00D6C69C /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		09261F6D1EC0B1F5008B40F0 /* SwiftyKnob */ = {
 			isa = PBXGroup;
 			children = (
+				09775A4E1EC0E13A00D6C69C /* Knob.swift */,
 				09261F6E1EC0B1F5008B40F0 /* AppDelegate.swift */,
 				09261F701EC0B1F5008B40F0 /* ViewController.swift */,
 				09261F721EC0B1F5008B40F0 /* Main.storyboard */,
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09261F711EC0B1F5008B40F0 /* ViewController.swift in Sources */,
+				09775A4F1EC0E13A00D6C69C /* Knob.swift in Sources */,
 				09261F6F1EC0B1F5008B40F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.technoreply.SwiftyKnob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.technoreply.SwiftyKnob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -414,6 +420,7 @@
 				09261F8A1EC0B1F5008B40F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09261F8B1EC0B1F5008B40F0 /* Build configuration list for PBXNativeTarget "SwiftyKnobTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				09261F8D1EC0B1F5008B40F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
