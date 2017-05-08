@@ -10,11 +10,11 @@ import UIKit
 
 class Knob: UIView {
     // Mark: Properties
-    var borderWidth: CGFloat = 20
-    var borderColor: UIColor = UIColor.lightGray
-    var value: Double = 0.78
-    var text: String = "78%"
-    var descriptionString: String = "retention"
+    @IBInspectable var borderWidth: CGFloat = 20
+    @IBInspectable var borderColor: UIColor = UIColor.lightGray
+    @IBInspectable var value: Double = 0.78
+    @IBInspectable var text: String = "78%"
+    @IBInspectable var descriptionString: String = "retention"
     
     // Mark: Global properties
     var circle: CAShapeLayer!
@@ -29,12 +29,14 @@ class Knob: UIView {
     
     init(frame: CGRect, borderWidth: CGFloat, borderColor: UIColor, value: Double, text: String, description: String) {
         super.init(frame: frame)
+        
         self.borderWidth = borderWidth
         self.borderColor = borderColor
         self.value = value
         self.text = text
         self.descriptionString = description
-
+        
+        initializeView()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -76,8 +78,8 @@ class Knob: UIView {
         self.addSubview(textLabel)
         
         descriptionLabel = UILabel()
-        descriptionLabel.text = text
-        descriptionLabel.textColor = UIColor.darkGray
+        descriptionLabel.text = descriptionString
+        descriptionLabel.textColor = UIColor.lightGray
         descriptionLabel.textAlignment = .center
         descriptionLabel.font = UIFont(name: "Helvetica", size: 12)
         self.addSubview(descriptionLabel)
@@ -91,7 +93,7 @@ class Knob: UIView {
         animation.fromValue = 0
         animation.toValue = 1
         
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         
         resizeLabels()
         circle.strokeEnd = 1
@@ -99,14 +101,23 @@ class Knob: UIView {
     }
     
     func resizeLabels() {
+        let adjustment: CGFloat = 0.04
+        
+//        textLabel.backgroundColor = UIColor.brown
+        
+        textLabel.sizeToFit()
         var textLabelFrame = textLabel.frame
         textLabelFrame.size.width = self.frame.width
         textLabelFrame.origin.y = (self.frame.height - textLabelFrame.height) / 2
+        // Adjust text position
+        textLabelFrame.origin.y = textLabelFrame.origin.y - (self.frame.height * adjustment)
         textLabel.frame = textLabelFrame
         
+        descriptionLabel.sizeToFit()
         var descriptionLabelFrame = descriptionLabel.frame
         descriptionLabelFrame.size.width = self.frame.width
-        descriptionLabelFrame.origin.y = ((self.frame.height - descriptionLabelFrame.height) / 4) * 3
-        descriptionLabel.frame = textLabelFrame
+        // descriptionLabelFrame.origin.y = ((self.frame.height - descriptionLabelFrame.height) / 4) * 3
+        descriptionLabelFrame.origin.y = textLabel.frame.origin.y + textLabel.frame.height
+        descriptionLabel.frame = descriptionLabelFrame
     }
 }
