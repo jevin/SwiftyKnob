@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyKnob (0.0.5)
+
+DEPENDENCIES:
+  - SwiftyKnob (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftyKnob:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftyKnob: 6990489e09f8b581b0ac60fbfcb14753c8668269
+
+PODFILE CHECKSUM: f575143e6801d91d34f97f1108f5115edcb11ee7
+
+COCOAPODS: 1.2.0

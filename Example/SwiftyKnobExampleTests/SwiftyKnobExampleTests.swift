@@ -1,15 +1,15 @@
 //
-//  SwiftyKnobTests.swift
-//  SwiftyKnobTests
+//  SwiftyKnobExampleTests.swift
+//  SwiftyKnobExampleTests
 //
-//  Created by Jevin Sewaruth on 08/05/2017.
+//  Created by Jevin Sewaruth on 09/05/2017.
 //  Copyright © 2017 Jevin Sew. All rights reserved.
 //
 
 import XCTest
-@testable import SwiftyKnob
+@testable import SwiftyKnobExample
 
-class SwiftyKnobTests: XCTestCase {
+class SwiftyKnobExampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

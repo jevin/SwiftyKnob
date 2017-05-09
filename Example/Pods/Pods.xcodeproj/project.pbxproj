@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E0F030C69DCB7EDDB22BBCA7FB44CD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		2785A769A55295E76BD370088FFDE879 /* Pods-SwiftyKnobExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D6B81CECF4F58CD6F8B74B63B818C /* Pods-SwiftyKnobExample-dummy.m */; };
+		2F0915FD41204BAAA664360BCFC02B48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		405EEE880B5560A972A1294216FA9E3A /* Pods-SwiftyKnobExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF516426A4D3ACE8840691D5D3038B8B /* Pods-SwiftyKnobExampleTests-dummy.m */; };
+		53CC193EA2D84E36FF0CEB27D9D6A181 /* SwiftyKnob-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E0DF7FB465356A16FB5BB5ED8BCFD2 /* SwiftyKnob-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		672BCFC6275C0BF2A5009F4A5058A708 /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8605F7DF1A8678A78C00DF89893AE8 /* Knob.swift */; };
+		7EDCA6BA60711F737CDD98569A2A4F9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		CDDF31A89D424B6FAFCD55AFD616D1DC /* Pods-SwiftyKnobExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1AE2C81EE7189D6B069BDD851B14A3 /* Pods-SwiftyKnobExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECFFFC45A2012BFB09A580F453E728F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		D5970AFC6F1EA3F59FEE34227D1895FE /* Pods-SwiftyKnobExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1BE2D405EF65DB7B703793536C8B15 /* Pods-SwiftyKnobExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8051B9C1EDC5DDBD2800CF9E55AD7EA /* SwiftyKnob-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CF22BAF5C7883B40CCA21389C17F87 /* SwiftyKnob-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83D76F38581B2BF81E0D3ED211A2B477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CB937CDB468FA78661B05090E25C7F9;
+			remoteInfo = SwiftyKnob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04CF22BAF5C7883B40CCA21389C17F87 /* SwiftyKnob-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyKnob-dummy.m"; sourceTree = "<group>"; };
+		0E1AE2C81EE7189D6B069BDD851B14A3 /* Pods-SwiftyKnobExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyKnobExample-umbrella.h"; sourceTree = "<group>"; };
+		12EA8E59E7861D0E9B4982C02B3BE50E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182355CA9414DB630DDD0036457CABE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5D6B81CECF4F58CD6F8B74B63B818C /* Pods-SwiftyKnobExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyKnobExample-dummy.m"; sourceTree = "<group>"; };
+		2A75C32007A3480B90C521EA98561F57 /* Pods-SwiftyKnobExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyKnobExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		398B27D73F9671099494756CE0FBB786 /* Pods-SwiftyKnobExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyKnobExample-resources.sh"; sourceTree = "<group>"; };
+		3ECB46B78419CECD1057441931CC1460 /* Pods-SwiftyKnobExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyKnobExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40296705D82C6484475961239F971949 /* Pods-SwiftyKnobExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyKnobExample-frameworks.sh"; sourceTree = "<group>"; };
+		409713F6F82A12092B76BFE076D04B66 /* SwiftyKnob-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyKnob-prefix.pch"; sourceTree = "<group>"; };
+		5F4E3452AE560E20AC3AFDD8B8A0EEBF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B9D6D43326EB02B2CAD3BA9E9D3A082 /* Pods-SwiftyKnobExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyKnobExampleTests-resources.sh"; sourceTree = "<group>"; };
+		6CB696EEC0901AAEEBF92C18C47C7CDE /* Pods-SwiftyKnobExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftyKnobExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8A5FCFED6AA6A83913F7DF27B2A23612 /* Pods-SwiftyKnobExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyKnobExampleTests-frameworks.sh"; sourceTree = "<group>"; };
+		8D5B0819A6194966692DB5A7579A7B1F /* Pods_SwiftyKnobExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftyKnobExampleTests.framework; path = "Pods-SwiftyKnobExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2F002D66C408187290DACE8563A8F2 /* Pods-SwiftyKnobExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftyKnobExampleTests.modulemap"; sourceTree = "<group>"; };
+		8F9447C7ED238AD0521AF0EC5170419C /* Pods-SwiftyKnobExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyKnobExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		956732CF68DF5AAB1B91B6D0A3DC6F9A /* Pods-SwiftyKnobExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftyKnobExample.modulemap"; sourceTree = "<group>"; };
+		9655628DFE540C0D3030AA472843338A /* Pods-SwiftyKnobExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyKnobExample.debug.xcconfig"; sourceTree = "<group>"; };
+		9CB20B4F14BA5DF1F2A6A68366DAC404 /* SwiftyKnob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyKnob.framework; path = SwiftyKnob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02A906D2DF822451AF9E8F63D9C9579 /* SwiftyKnob.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyKnob.modulemap; sourceTree = "<group>"; };
+		A1E0DF7FB465356A16FB5BB5ED8BCFD2 /* SwiftyKnob-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyKnob-umbrella.h"; sourceTree = "<group>"; };
+		B41205E600BF49E56D87B53660AFD798 /* Pods-SwiftyKnobExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftyKnobExample.release.xcconfig"; sourceTree = "<group>"; };
+		BE8605F7DF1A8678A78C00DF89893AE8 /* Knob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		CB828AB7C2131BE54D626EE62AE0AD28 /* Pods_SwiftyKnobExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftyKnobExample.framework; path = "Pods-SwiftyKnobExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1BE2D405EF65DB7B703793536C8B15 /* Pods-SwiftyKnobExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftyKnobExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		CF516426A4D3ACE8840691D5D3038B8B /* Pods-SwiftyKnobExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftyKnobExampleTests-dummy.m"; sourceTree = "<group>"; };
+		D6D6740AB7C6B28340221115462CF658 /* Pods-SwiftyKnobExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyKnobExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE145945FC4ED20C3809B94335008625 /* SwiftyKnob.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyKnob.xcconfig; sourceTree = "<group>"; };
+		FAF7B6B30933BF2F9D94A7FA172B5E1E /* Pods-SwiftyKnobExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftyKnobExample-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24A670D77220BA81E2FEE90876D00360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0915FD41204BAAA664360BCFC02B48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6998D87B04C004C2BCDEFEF8A8A2B013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0F030C69DCB7EDDB22BBCA7FB44CD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8110C33612FB04CF77C87EB8561D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECFFFC45A2012BFB09A580F453E728F /* Foundation.framework in Frameworks */,
+				7EDCA6BA60711F737CDD98569A2A4F9F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03297AB0BED9419E877CF295637ADF6B /* SwiftyKnob */ = {
+			isa = PBXGroup;
+			children = (
+				4C0428690E1E81828A6D6BDDCDAC8248 /* Classes */,
+			);
+			name = SwiftyKnob;
+			path = SwiftyKnob;
+			sourceTree = "<group>";
+		};
+		2905FFFF77912F3E8606F56479167135 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D159B09F36A100A1C1533E2998359719 /* Pods-SwiftyKnobExample */,
+				60A02C7B6B4F5561459FE45FE0BD7176 /* Pods-SwiftyKnobExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AF64235506023B3B139C538C3DAAD95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB828AB7C2131BE54D626EE62AE0AD28 /* Pods_SwiftyKnobExample.framework */,
+				8D5B0819A6194966692DB5A7579A7B1F /* Pods_SwiftyKnobExampleTests.framework */,
+				9CB20B4F14BA5DF1F2A6A68366DAC404 /* SwiftyKnob.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C0428690E1E81828A6D6BDDCDAC8248 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE8605F7DF1A8678A78C00DF89893AE8 /* Knob.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		60A02C7B6B4F5561459FE45FE0BD7176 /* Pods-SwiftyKnobExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F4E3452AE560E20AC3AFDD8B8A0EEBF /* Info.plist */,
+				8E2F002D66C408187290DACE8563A8F2 /* Pods-SwiftyKnobExampleTests.modulemap */,
+				6CB696EEC0901AAEEBF92C18C47C7CDE /* Pods-SwiftyKnobExampleTests-acknowledgements.markdown */,
+				D6D6740AB7C6B28340221115462CF658 /* Pods-SwiftyKnobExampleTests-acknowledgements.plist */,
+				CF516426A4D3ACE8840691D5D3038B8B /* Pods-SwiftyKnobExampleTests-dummy.m */,
+				8A5FCFED6AA6A83913F7DF27B2A23612 /* Pods-SwiftyKnobExampleTests-frameworks.sh */,
+				6B9D6D43326EB02B2CAD3BA9E9D3A082 /* Pods-SwiftyKnobExampleTests-resources.sh */,
+				CF1BE2D405EF65DB7B703793536C8B15 /* Pods-SwiftyKnobExampleTests-umbrella.h */,
+				2A75C32007A3480B90C521EA98561F57 /* Pods-SwiftyKnobExampleTests.debug.xcconfig */,
+				8F9447C7ED238AD0521AF0EC5170419C /* Pods-SwiftyKnobExampleTests.release.xcconfig */,
+			);
+			name = "Pods-SwiftyKnobExampleTests";
+			path = "Target Support Files/Pods-SwiftyKnobExampleTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F2FB8328FD1DCBD334D509939BD33F45 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				4AF64235506023B3B139C538C3DAAD95 /* Products */,
+				2905FFFF77912F3E8606F56479167135 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF3F5C90814C1A896D7AF8841282195 /* SwiftyKnob */ = {
+			isa = PBXGroup;
+			children = (
+				CFE946F84AE92F64FD5C80682EC8CEF8 /* Support Files */,
+				03297AB0BED9419E877CF295637ADF6B /* SwiftyKnob */,
+			);
+			name = SwiftyKnob;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CFE946F84AE92F64FD5C80682EC8CEF8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12EA8E59E7861D0E9B4982C02B3BE50E /* Info.plist */,
+				A02A906D2DF822451AF9E8F63D9C9579 /* SwiftyKnob.modulemap */,
+				EE145945FC4ED20C3809B94335008625 /* SwiftyKnob.xcconfig */,
+				04CF22BAF5C7883B40CCA21389C17F87 /* SwiftyKnob-dummy.m */,
+				409713F6F82A12092B76BFE076D04B66 /* SwiftyKnob-prefix.pch */,
+				A1E0DF7FB465356A16FB5BB5ED8BCFD2 /* SwiftyKnob-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftyKnob";
+			sourceTree = "<group>";
+		};
+		D159B09F36A100A1C1533E2998359719 /* Pods-SwiftyKnobExample */ = {
+			isa = PBXGroup;
+			children = (
+				182355CA9414DB630DDD0036457CABE0 /* Info.plist */,
+				956732CF68DF5AAB1B91B6D0A3DC6F9A /* Pods-SwiftyKnobExample.modulemap */,
+				3ECB46B78419CECD1057441931CC1460 /* Pods-SwiftyKnobExample-acknowledgements.markdown */,
+				FAF7B6B30933BF2F9D94A7FA172B5E1E /* Pods-SwiftyKnobExample-acknowledgements.plist */,
+				2A5D6B81CECF4F58CD6F8B74B63B818C /* Pods-SwiftyKnobExample-dummy.m */,
+				40296705D82C6484475961239F971949 /* Pods-SwiftyKnobExample-frameworks.sh */,
+				398B27D73F9671099494756CE0FBB786 /* Pods-SwiftyKnobExample-resources.sh */,
+				0E1AE2C81EE7189D6B069BDD851B14A3 /* Pods-SwiftyKnobExample-umbrella.h */,
+				9655628DFE540C0D3030AA472843338A /* Pods-SwiftyKnobExample.debug.xcconfig */,
+				B41205E600BF49E56D87B53660AFD798 /* Pods-SwiftyKnobExample.release.xcconfig */,
+			);
+			name = "Pods-SwiftyKnobExample";
+			path = "Target Support Files/Pods-SwiftyKnobExample";
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F2FB8328FD1DCBD334D509939BD33F45 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CF3F5C90814C1A896D7AF8841282195 /* SwiftyKnob */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C60F678711F96F8FF757F1FE0F9DC36B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5970AFC6F1EA3F59FEE34227D1895FE /* Pods-SwiftyKnobExampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65AB20D09CBEBDE9896D5D73BB22622 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CC193EA2D84E36FF0CEB27D9D6A181 /* SwiftyKnob-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBBB79A9D6BB75199CA26DB38A572B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDF31A89D424B6FAFCD55AFD616D1DC /* Pods-SwiftyKnobExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0CB937CDB468FA78661B05090E25C7F9 /* SwiftyKnob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E97397EF0EAC02F5E9199A1A3B3EE987 /* Build configuration list for PBXNativeTarget "SwiftyKnob" */;
+			buildPhases = (
+				B37883EF14B93C4125AB8382A646E6F0 /* Sources */,
+				BC8110C33612FB04CF77C87EB8561D14 /* Frameworks */,
+				E65AB20D09CBEBDE9896D5D73BB22622 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyKnob;
+			productName = SwiftyKnob;
+			productReference = 9CB20B4F14BA5DF1F2A6A68366DAC404 /* SwiftyKnob.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0E1B009D9153C1B8C6D875FEBDCC1F2C /* Pods-SwiftyKnobExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D2ECCA3E4D3931C4FAAC39A63A6565A /* Build configuration list for PBXNativeTarget "Pods-SwiftyKnobExample" */;
+			buildPhases = (
+				0D3718F374AFC3647DE3822351F01734 /* Sources */,
+				6998D87B04C004C2BCDEFEF8A8A2B013 /* Frameworks */,
+				EEBBB79A9D6BB75199CA26DB38A572B9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60753F4B76958FB63056580F07EC3707 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftyKnobExample";
+			productName = "Pods-SwiftyKnobExample";
+			productReference = CB828AB7C2131BE54D626EE62AE0AD28 /* Pods_SwiftyKnobExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56D3ADB92CD23E92D71809048CAB033F /* Pods-SwiftyKnobExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FAA342F6A8BD03101B1B8D9CCD4E20 /* Build configuration list for PBXNativeTarget "Pods-SwiftyKnobExampleTests" */;
+			buildPhases = (
+				4D8FBD147E28331D9C17E807B9662125 /* Sources */,
+				24A670D77220BA81E2FEE90876D00360 /* Frameworks */,
+				C60F678711F96F8FF757F1FE0F9DC36B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftyKnobExampleTests";
+			productName = "Pods-SwiftyKnobExampleTests";
+			productReference = 8D5B0819A6194966692DB5A7579A7B1F /* Pods_SwiftyKnobExampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4AF64235506023B3B139C538C3DAAD95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E1B009D9153C1B8C6D875FEBDCC1F2C /* Pods-SwiftyKnobExample */,
+				56D3ADB92CD23E92D71809048CAB033F /* Pods-SwiftyKnobExampleTests */,
+				0CB937CDB468FA78661B05090E25C7F9 /* SwiftyKnob */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D3718F374AFC3647DE3822351F01734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2785A769A55295E76BD370088FFDE879 /* Pods-SwiftyKnobExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D8FBD147E28331D9C17E807B9662125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405EEE880B5560A972A1294216FA9E3A /* Pods-SwiftyKnobExampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37883EF14B93C4125AB8382A646E6F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				672BCFC6275C0BF2A5009F4A5058A708 /* Knob.swift in Sources */,
+				E8051B9C1EDC5DDBD2800CF9E55AD7EA /* SwiftyKnob-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60753F4B76958FB63056580F07EC3707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyKnob;
+			target = 0CB937CDB468FA78661B05090E25C7F9 /* SwiftyKnob */;
+			targetProxy = 83D76F38581B2BF81E0D3ED211A2B477 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		358DAA319BF1B64AA4C6BE8428E76D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9447C7ED238AD0521AF0EC5170419C /* Pods-SwiftyKnobExampleTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyKnobExampleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyKnobExampleTests/Pods-SwiftyKnobExampleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftyKnobExampleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D82CE600A26ECF9DD2129857CBE56F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41205E600BF49E56D87B53660AFD798 /* Pods-SwiftyKnobExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyKnobExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyKnobExample/Pods-SwiftyKnobExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftyKnobExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A7111BFEE0EB6D083FE27D39FA79C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE145945FC4ED20C3809B94335008625 /* SwiftyKnob.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyKnob/SwiftyKnob-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyKnob/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyKnob/SwiftyKnob.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyKnob;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D1454AF8D8FAD86B8B4343CF816DF87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE145945FC4ED20C3809B94335008625 /* SwiftyKnob.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyKnob/SwiftyKnob-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyKnob/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyKnob/SwiftyKnob.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyKnob;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8CE0713F6265AAC3A060455A30AD4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A75C32007A3480B90C521EA98561F57 /* Pods-SwiftyKnobExampleTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyKnobExampleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyKnobExampleTests/Pods-SwiftyKnobExampleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftyKnobExampleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAC18EB6BC47F5A80B70A6BBBCB84AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9655628DFE540C0D3030AA472843338A /* Pods-SwiftyKnobExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftyKnobExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftyKnobExample/Pods-SwiftyKnobExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftyKnobExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35FAA342F6A8BD03101B1B8D9CCD4E20 /* Build configuration list for PBXNativeTarget "Pods-SwiftyKnobExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8CE0713F6265AAC3A060455A30AD4B7 /* Debug */,
+				358DAA319BF1B64AA4C6BE8428E76D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D2ECCA3E4D3931C4FAAC39A63A6565A /* Build configuration list for PBXNativeTarget "Pods-SwiftyKnobExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC18EB6BC47F5A80B70A6BBBCB84AB7 /* Debug */,
+				6D82CE600A26ECF9DD2129857CBE56F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E97397EF0EAC02F5E9199A1A3B3EE987 /* Build configuration list for PBXNativeTarget "SwiftyKnob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7111BFEE0EB6D083FE27D39FA79C96 /* Debug */,
+				D1454AF8D8FAD86B8B4343CF816DF87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

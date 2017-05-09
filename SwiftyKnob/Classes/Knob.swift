@@ -15,6 +15,7 @@ public class Knob: UIView {
     @IBInspectable var value: Double = 0.78
     @IBInspectable var text: String = "78%"
     @IBInspectable var descriptionString: String = "retention"
+    @IBInspectable var autoAnimate: Bool = true
     
     // Mark: Global properties
     var circle: CAShapeLayer!
@@ -27,7 +28,11 @@ public class Knob: UIView {
         initializeView()
     }
     
-    init(frame: CGRect, borderWidth: CGFloat, borderColor: UIColor, value: Double, text: String, description: String) {
+    public convenience init(frame: CGRect, borderWidth: CGFloat, borderColor: UIColor, value: Double, text: String, description: String) {
+        self.init(frame: frame, borderWidth: borderWidth, borderColor: borderColor, value: value, text: text, description: description, autoAnimate: true)
+    }
+    
+    public init(frame: CGRect, borderWidth: CGFloat, borderColor: UIColor, value: Double, text: String, description: String, autoAnimate: Bool) {
         super.init(frame: frame)
         
         self.borderWidth = borderWidth
@@ -35,6 +40,7 @@ public class Knob: UIView {
         self.value = value
         self.text = text
         self.descriptionString = description
+        self.autoAnimate = autoAnimate
         
         initializeView()
     }
@@ -61,6 +67,25 @@ public class Knob: UIView {
         circle.strokeEnd = 0
         
         layer.addSublayer(circle)
+        
+        if autoAnimate {
+            self.animate()
+        }
+    }
+    
+    public func animate() {
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        
+        animation.duration = 0.5
+        
+        animation.fromValue = 0
+        animation.toValue = 1
+        
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        
+        resizeLabels()
+        circle.strokeEnd = 1
+        circle.add(animation, forKey: "animate")
     }
     
     func initializeView() {
@@ -85,25 +110,8 @@ public class Knob: UIView {
         self.addSubview(descriptionLabel)
     }
     
-    func animate() {
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
-        
-        animation.duration = 0.5
-        
-        animation.fromValue = 0
-        animation.toValue = 1
-        
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-        
-        resizeLabels()
-        circle.strokeEnd = 1
-        circle.add(animation, forKey: "animate")
-    }
-    
     func resizeLabels() {
         let adjustment: CGFloat = 0.04
-        
-//        textLabel.backgroundColor = UIColor.brown
         
         textLabel.sizeToFit()
         var textLabelFrame = textLabel.frame
@@ -116,7 +124,6 @@ public class Knob: UIView {
         descriptionLabel.sizeToFit()
         var descriptionLabelFrame = descriptionLabel.frame
         descriptionLabelFrame.size.width = self.frame.width
-        // descriptionLabelFrame.origin.y = ((self.frame.height - descriptionLabelFrame.height) / 4) * 3
         descriptionLabelFrame.origin.y = textLabel.frame.origin.y + textLabel.frame.height
         descriptionLabel.frame = descriptionLabelFrame
     }
