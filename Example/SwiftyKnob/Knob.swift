@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Knob: UIView {
+public class Knob: UIView {
     // Mark: Properties
     @IBInspectable var borderWidth: CGFloat = 20
     @IBInspectable var borderColor: UIColor = UIColor.lightGray
@@ -39,13 +39,13 @@ class Knob: UIView {
         initializeView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         initializeView()
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         let width = frame.width
         let height = frame.height
         let startAngle = 0.7
