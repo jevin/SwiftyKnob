@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Knob: UIView {
+public class Knob: UIView {
     // Mark: Properties
     @IBInspectable var borderWidth: CGFloat = 20
     @IBInspectable var borderColor: UIColor = UIColor.lightGray
