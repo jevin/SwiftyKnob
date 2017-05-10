@@ -72,3 +72,5 @@ Thanks to [@mikedev](https://twitter.com/mikedev) for his [awesome answer](http:
 ## License
 
 SwiftyKnob is available under the MIT License. See the LICENSE file for more info.
+
+If you like what I do, you should follow me on Twitter: [@jevinsew](https://twitter.com/jevinsew/) ✌️
