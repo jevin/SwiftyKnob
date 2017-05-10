@@ -19,8 +19,8 @@ public class Knob: UIView {
     
     // Mark: Global properties
     var circle: CAShapeLayer!
-    var textLabel: UILabel!
-    var descriptionLabel: UILabel!
+    public var textLabel: UILabel!
+    public var descriptionLabel: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
