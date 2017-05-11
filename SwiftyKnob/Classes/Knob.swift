@@ -58,6 +58,15 @@ public class Knob: UIView {
         let travelAngle = 1.6
         let endAngle = startAngle + (travelAngle * value)
         
+        let backgroundCircle = CAShapeLayer()
+        backgroundCircle.path = UIBezierPath(arcCenter: CGPoint(x: width / CGFloat(2), y: height / CGFloat(2)), radius: (width / CGFloat(2)) - borderWidth, startAngle: CGFloat(Double.pi * startAngle), endAngle: CGFloat(Double.pi * 2.30), clockwise: true).cgPath
+        backgroundCircle.fillColor = UIColor.clear.cgColor
+        backgroundCircle.strokeColor = borderColor.withAlphaComponent(0.2).cgColor
+        backgroundCircle.lineWidth = borderWidth
+        backgroundCircle.strokeEnd = 1
+        
+        layer.addSublayer(backgroundCircle)
+        
         circle = CAShapeLayer()
         circle.path = UIBezierPath(arcCenter: CGPoint(x: width / CGFloat(2), y: height / CGFloat(2)), radius: (width / CGFloat(2)) - borderWidth, startAngle: CGFloat(Double.pi * startAngle), endAngle: CGFloat(Double.pi * endAngle), clockwise: true).cgPath
         circle.fillColor = UIColor.clear.cgColor
@@ -96,14 +105,12 @@ public class Knob: UIView {
         self.backgroundColor = UIColor.clear
         
         textLabel = UILabel()
-        textLabel.text = text
         textLabel.textColor = UIColor.darkGray
         textLabel.textAlignment = .center
         textLabel.font = UIFont(name: "Helvetica-Bold", size: 16)
         self.addSubview(textLabel)
         
         descriptionLabel = UILabel()
-        descriptionLabel.text = descriptionString
         descriptionLabel.textColor = UIColor.lightGray
         descriptionLabel.textAlignment = .center
         descriptionLabel.font = UIFont(name: "Helvetica", size: 12)
@@ -113,6 +120,7 @@ public class Knob: UIView {
     func resizeLabels() {
         let adjustment: CGFloat = 0.04
         
+        textLabel.text = text
         textLabel.sizeToFit()
         var textLabelFrame = textLabel.frame
         textLabelFrame.size.width = self.frame.width
@@ -121,6 +129,7 @@ public class Knob: UIView {
         textLabelFrame.origin.y = textLabelFrame.origin.y - (self.frame.height * adjustment)
         textLabel.frame = textLabelFrame
         
+        descriptionLabel.text = descriptionString
         descriptionLabel.sizeToFit()
         var descriptionLabelFrame = descriptionLabel.frame
         descriptionLabelFrame.size.width = self.frame.width
