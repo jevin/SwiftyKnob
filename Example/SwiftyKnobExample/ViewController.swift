@@ -43,11 +43,11 @@ class ViewController: UIViewController {
         let knobSize = (self.view.frame.width - 16) / 3.0
         let y: CGFloat = 50
         
-        k1 = Knob(frame: CGRect(x: 8, y: y, width: knobSize, height: knobSize),
+        k1 = Knob(frame: CGRect(x: 8, y: y + 30, width: knobSize, height: knobSize),
                   borderWidth: 18,
                   borderColor: alizarin,
                   value: 0.78, text: "78%",
-                  description: "click rate",
+                  description: "open rate",
                   autoAnimate: false
         )
         k2 = Knob(frame: CGRect(x: 8 + knobSize, y: y, width: knobSize, height: knobSize),
@@ -55,14 +55,14 @@ class ViewController: UIViewController {
                   borderColor: turquoise,
                   value: 0.62,
                   text: "62",
-                  description: "signups"
+                  description: "click rate"
         )
-        k3 = Knob(frame: CGRect(x: 8 + knobSize + knobSize, y: y, width: knobSize, height: knobSize),
+        k3 = Knob(frame: CGRect(x: 8 + knobSize + knobSize, y: y + 30, width: knobSize, height: knobSize),
                   borderWidth: 18,
                   borderColor: amethyst,
-                  value: 0.99,
+                  value: 0.31,
                   text: "99%",
-                  description: "retention",
+                  description: "order rate",
                   autoAnimate: false
         )
         
