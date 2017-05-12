@@ -57,8 +57,8 @@ public class Knob: UIView {
         let startAngle = 0.7
         let travelAngle = 1.6
         let endAngle = startAngle + (travelAngle * value)
-        
         let backgroundCircle = CAShapeLayer()
+        
         backgroundCircle.path = UIBezierPath(arcCenter: CGPoint(x: width / CGFloat(2), y: height / CGFloat(2)), radius: (width / CGFloat(2)) - borderWidth, startAngle: CGFloat(Double.pi * startAngle), endAngle: CGFloat(Double.pi * 2.30), clockwise: true).cgPath
         backgroundCircle.fillColor = UIColor.clear.cgColor
         backgroundCircle.strokeColor = borderColor.withAlphaComponent(0.2).cgColor
