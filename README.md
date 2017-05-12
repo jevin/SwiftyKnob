@@ -5,7 +5,7 @@
 
 SwiftyKnob allows you to easily add knobs in your iOS apps.
 
-TODO: Add gif demo
+![SwiftyKnob demo](https://github.com/jevin/SwiftyKnob/blob/master/images/SwiftyKnob.gif)
 
 ## Installation
 
