@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SwiftyKnob"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "An easy way to add knobs in your app"
 
   # This description is used to generate tags and improve search results.
