@@ -3,9 +3,11 @@
 [![Version](https://img.shields.io/cocoapods/v/SwiftyKnob.svg?style=flat)](http://cocoapods.org/pods/SwiftyKnob)
 ![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)
 
-SwiftyKnob allows you to easily add knobs in your iOS apps.
+SwiftyKnob allows you to easily add knobs in your iOS apps. If you are unfamiliar with knobs, they are basically curved progress bars. You can use them to show profile completion, stats or just about anything else!
 
-![SwiftyKnob demo](https://github.com/jevin/SwiftyKnob/blob/master/images/SwiftyKnob.gif)
+Here's what it looks like:
+
+<img alt="SwiftyKnob demo" src="https://github.com/jevin/SwiftyKnob/blob/master/images/SwiftyKnob.gif" width=400 />
 
 ## Installation
 
