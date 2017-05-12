@@ -77,6 +77,8 @@ public class Knob: UIView {
         
         layer.addSublayer(circle)
         
+        resizeLabels()
+        
         if autoAnimate {
             self.animate()
         }
@@ -92,7 +94,6 @@ public class Knob: UIView {
         
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
-        resizeLabels()
         circle.strokeEnd = 1
         circle.add(animation, forKey: "animate")
     }
