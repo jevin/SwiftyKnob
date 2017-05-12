@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SwiftyKnob"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "An easy way to add knobs in your app"
 
   # This description is used to generate tags and improve search results.
@@ -30,9 +30,11 @@ Pod::Spec.new do |s|
 [![Version](https://img.shields.io/cocoapods/v/SwiftyKnob.svg?style=flat)](http://cocoapods.org/pods/SwiftyKnob)
 ![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)
 
-SwiftyKnob allows you to easily add knobs in your iOS apps.
+SwiftyKnob allows you to easily add knobs in your iOS apps. If you are unfamiliar with knobs, they are basically curved progress bars. You can use them to show profile completion, stats or just about anything else!
 
-![SwiftyKnob demo](https://github.com/jevin/SwiftyKnob/blob/master/images/SwiftyKnob.gif)
+Here's what it looks like:
+
+<img alt="SwiftyKnob demo" src="https://github.com/jevin/SwiftyKnob/blob/master/images/SwiftyKnob.gif" width=400 />
 
 ## Installation
 
@@ -48,10 +50,10 @@ Just drag the `Knob.swift` in `SwiftyKnob/Classes/` to your project tree and you
 
 ## Usage
 
-### Code only
+### In code
 
 ```swift
-var knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
+let knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
           borderWidth: 18,
           borderColor: UIColor.red,
           value: 0.78, 
@@ -74,14 +76,36 @@ value | The value of the knob. Should be between 0.0 and 1.0
 text | The main text, displayed at the center of the knob
 description | A smaller description, displayed below the text above
 
-### Storyboard
+#### Controlling animations
+By default, the knob animates as soon as it's drawn. If you want to control that, you can use the follwing code:
 
-**Step 1:** Add a `UIView` to your scene
+```swift
+let knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
+          borderWidth: 18,
+          borderColor: UIColor.red,
+          value: 0.78, 
+          text: "78%",
+          description: "open rate",
+          autoAnimate: false
+)
+```
+The last parameter tells SwiftyKnob **not** to animate the knob when it's drawn. You can then use the following line to fire the animation.
 
-**Step 2:** Make `Knob` the custom class of your view
+```swift
+knob.animate()
+```
+**Note:** Calling `animate` inside `viewDidLoad` will not work. Instead you should call it in `viewDidAppear`.
+
+### In storyboards
+
+1. Add a `UIView` to your scene
+
+2. Make `Knob` the custom class of your view
+
 ![Image 1](https://github.com/jevin/SwiftyKnob/blob/master/images/storyboard-1.png)
 
-**Step 3:** Customize your knob using the exposed attributes
+3. Customize your knob using the exposed attributes
+
 ![Image 2](https://github.com/jevin/SwiftyKnob/blob/master/images/storyboard-2.png)
 
 ## Contributing
