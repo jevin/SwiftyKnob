@@ -23,7 +23,7 @@ Just drag the `Knob.swift` in `SwiftyKnob/Classes/` to your project tree and you
 
 ## Usage
 
-### Code only
+### In code
 
 ```swift
 var knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
@@ -49,14 +49,36 @@ value | The value of the knob. Should be between 0.0 and 1.0
 text | The main text, displayed at the center of the knob
 description | A smaller description, displayed below the text above
 
-### Storyboard
+#### Controlling animations
+By default, the knob animates as soon as it's drawn. If you want to control that, you can use the follwing code:
 
-**Step 1:** Add a `UIView` to your scene
+```swift
+var knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
+          borderWidth: 18,
+          borderColor: UIColor.red,
+          value: 0.78, 
+          text: "78%",
+          description: "open rate",
+          autoAnimate: false
+)
+```
+The last parameter tells SwiftyKnob **not** to animate the knob when it's drawn. You can then use the following line to fire the animation.
 
-**Step 2:** Make `Knob` the custom class of your view
+```swift
+knob.animate()
+```
+**Note:** Calling `animate` inside `viewDidLoad` will not work. Instead you should call it in `viewDidAppear`.
+
+### In storyboards
+
+1. Add a `UIView` to your scene
+
+2. Make `Knob` the custom class of your view
+
 ![Image 1](https://github.com/jevin/SwiftyKnob/blob/master/images/storyboard-1.png)
 
-**Step 3:** Customize your knob using the exposed attributes
+3. Customize your knob using the exposed attributes
+
 ![Image 2](https://github.com/jevin/SwiftyKnob/blob/master/images/storyboard-2.png)
 
 ## Contributing
