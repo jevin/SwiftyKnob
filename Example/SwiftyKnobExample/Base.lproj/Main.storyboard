@@ -40,9 +40,11 @@
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHr-Ol-bbr">
-                                <rect key="frame" x="81" y="617" width="57" height="30"/>
+                                <rect key="frame" x="289" y="617" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Animate"/>
+                                <state key="normal" title="Reanimate">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="animateKnobs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XzA-85-0PD"/>
                                 </connections>
@@ -61,6 +63,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hqh-qS-8hu">
