@@ -44,24 +44,25 @@ class ViewController: UIViewController {
         let y: CGFloat = 50
         
         k1 = Knob(frame: CGRect(x: 8, y: y + 30, width: knobSize, height: knobSize),
-                  borderWidth: 18,
-                  borderColor: alizarin,
-                  value: 0.78, text: "78%",
+                  borderWidth: 16,
+                  borderColor: peter_river,
+                  value: 0.83,
+                  text: "83%",
                   description: "open rate",
                   autoAnimate: false
         )
         k2 = Knob(frame: CGRect(x: 8 + knobSize, y: y, width: knobSize, height: knobSize),
-                  borderWidth: 18,
+                  borderWidth: 16,
                   borderColor: turquoise,
-                  value: 0.62,
-                  text: "62",
+                  value: 0.71,
+                  text: "71%",
                   description: "click rate"
         )
         k3 = Knob(frame: CGRect(x: 8 + knobSize + knobSize, y: y + 30, width: knobSize, height: knobSize),
-                  borderWidth: 18,
+                  borderWidth: 16,
                   borderColor: amethyst,
-                  value: 0.31,
-                  text: "99%",
+                  value: 0.62,
+                  text: "62%",
                   description: "order rate",
                   autoAnimate: false
         )
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
         mainKnob.textLabel.font = UIFont(name: "Helvetica-bold", size: 24)
         mainKnob.descriptionLabel.font = UIFont(name: "Helvetica", size: 14)
         
-        self.view.backgroundColor = wet_asphalt
+        self.view.backgroundColor = midnight_blue
         self.view.addSubview(k1)
         self.view.addSubview(k2)
         self.view.addSubview(k3)
@@ -83,6 +84,12 @@ class ViewController: UIViewController {
         k1.animate()
 //        k2.animate()
         k3.animate()
+    }
+    @IBAction func animateKnobs(_ sender: Any) {
+        k1.animate()
+        k2.animate()
+        k3.animate()
+        mainKnob.animate()
     }
 
     override func didReceiveMemoryWarning() {
