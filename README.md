@@ -26,7 +26,7 @@ Just drag the `Knob.swift` in `SwiftyKnob/Classes/` to your project tree and you
 ### In code
 
 ```swift
-var knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
+let knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
           borderWidth: 18,
           borderColor: UIColor.red,
           value: 0.78, 
@@ -53,7 +53,7 @@ description | A smaller description, displayed below the text above
 By default, the knob animates as soon as it's drawn. If you want to control that, you can use the follwing code:
 
 ```swift
-var knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
+let knob = Knob(frame: CGRect(x: 8, y: 20, width: 100, height: 100),
           borderWidth: 18,
           borderColor: UIColor.red,
           value: 0.78, 
